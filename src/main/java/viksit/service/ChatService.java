@@ -27,6 +27,9 @@ public class ChatService {
 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTKtfkH277K_FW2ydMS5xhsn5DWBUj-XmG75qiqSIKjF1wS4JHgw",
 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRs58_UFL6sGN61TLohxzC7sveTKCdby8fS9r7hK0a1jfZvxmo"};
 		Random r=new Random();
+		
+		
+		
 		int resullt = r.nextInt(4-1)+1;
 		HashSet<Integer> userIds=new HashSet<Integer>();
 		List<ChatMessage>  chatMessages= new ChatMessageDAO().findAll();
