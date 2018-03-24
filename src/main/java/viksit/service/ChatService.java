@@ -30,7 +30,8 @@ public class ChatService {
 		int resullt = r.nextInt(4-1)+1;
 		HashSet<Integer> userIds=new HashSet<Integer>();
 		List<ChatMessage>  chatMessages= new ChatMessageDAO().findAll();
-		for(ChatMessage chatMessage: chatMessages ) {
+		for(ChatMessage chatMessage: chatMessages ) 
+		{
 			if(chatMessage.getReceiverId().intValue() == userId.intValue()) {
 				userIds.add(chatMessage.getSenderId());
 			}
